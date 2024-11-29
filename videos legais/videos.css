@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(10, 9, 9);
+}
+h1{
+    color: white;
+    text-align: center;
+}
+h2{
+    color: #ffffff;
+}
+img{
+    padding: 5px;
+
+}
+.btn,.cursoCompleto{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+table{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+iframe{
+    padding-left: 350px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,30 @@
+@charset "UTF8";
+body{
+    background-color: #C2B078;
+    padding-top: 260px;
+}
+main{
+    height: 400px;
+    width: 500px;
+    background-color: #6b654b ;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #a19263d7;
+    padding: 10px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.imagem{
+    padding-left: 170px;
+}
+.button{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}

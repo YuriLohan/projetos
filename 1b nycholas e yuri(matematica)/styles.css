@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header, body{
+    background-color: rgb(255, 211, 233);
+}
+h1{
+    color:rgb(231, 142, 231);
+    text-align: center;
+}
+p{
+    background-color: rgb(255, 211, 233);
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+p{
+    color:rgb(231, 142, 231);
+    text-align: center;    
+}
+li{
+    color: rgb(206, 130, 206);
+    text-align: center;
+}

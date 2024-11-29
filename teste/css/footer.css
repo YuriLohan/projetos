@@ -1,0 +1,12 @@
+aside{
+    background-color: white;
+    width: 55%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+footer{
+    margin-top: 10px;
+    background-color: var(--cor1);
+    text-align: center;
+}
