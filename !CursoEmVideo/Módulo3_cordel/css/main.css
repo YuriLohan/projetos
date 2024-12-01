@@ -6,11 +6,13 @@
     background: black url(../imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
     color: white;
+    text-shadow: 1px 1px 0  black;
 }
 #estrofecinco{
     background: black url(../imagens/background002.jpg) right center no-repeat fixed;
     background-size: cover;
     color: white;
+    text-shadow: 1px 1px 0  black;
 }
 #estrofedois > p,#estrofecinco > p{
     background-color: rgba(0, 0, 0, 0.562);
