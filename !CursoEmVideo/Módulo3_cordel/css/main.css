@@ -16,7 +16,7 @@
 }
 #estrofedois > p,#estrofecinco > p{
     background-color: rgba(0, 0, 0, 0.562);
-    width: 400px;
+    max-width: 400px;
     padding: 5px;
 }
 main section{
