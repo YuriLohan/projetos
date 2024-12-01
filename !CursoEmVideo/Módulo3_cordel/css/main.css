@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 .estrofe{
-    height: 350px;
     border: 1px solid black;
 }
 #estrofedois{
@@ -13,9 +12,18 @@
     background-size: cover;
     color: white;
 }
+#estrofedois > p,#estrofecinco > p{
+    background-color: rgba(0, 0, 0, 0.562);
+    width: 300px;
+    padding: 5px;
+}
+main section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
 main section p{
     font-family: "Sriracha",cursive;
     font-size: 20px;
-    padding-top: 50px;
-    padding-left: 20px;
 }

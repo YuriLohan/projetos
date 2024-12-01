@@ -7,7 +7,6 @@
 }
 header{
     background-color: black;
-    height: 150px;
     text-align: center;
     color: white;
 
@@ -16,10 +15,15 @@ header > h1{
     padding-top: 40px;
     font-family: "Passion One", sans-serif;
     font-size: 4em;
+    font-variant: small-caps;
 }
-header > a{
+header > p{
+    padding-bottom: 40px;
+}
+header p a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 
 }
 a:hover{
