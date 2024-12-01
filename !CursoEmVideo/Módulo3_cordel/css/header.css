@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    height: 150px;
+    text-align: center;
+    color: white;
+
+}
+header > h1{
+    padding-top: 40px;
+    font-family: "Passion One", sans-serif;
+    font-size: 4em;
+}
+header > a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
