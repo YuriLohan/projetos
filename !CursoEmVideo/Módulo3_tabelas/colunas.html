@@ -5,10 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio de Tabela</title>
     <style>
-        
+        table{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead,.media{
+            background-color: gray;
+            color: white;
+        }
+        .num{
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
-    
+    <h1>Tabela de Notas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">
+                    Área
+                </th>
+                <th rowspan="2" scope="col">
+                    Disciplinas
+                </th>
+                <th colspan="2" scope="colgroup">
+                    Notas
+                </th>
+                <th rowspan="2" scope="col">
+                    Média
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Nota 1
+                </th>
+                <th>
+                    Nota 2
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope = "rowgroup">
+                    <strong>Exatas</strong>
+                </th>
+                <td>Matemática</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+            </tr>
+            <tr class = "media">
+                <td colspan="4">
+                    Média de Exatas
+                </td>
+                <td class = "num">
+                    0.0
+                </td>
+            </tr>
+            <tr>
+                <th rowspan = "2" scope = "rowgroup"><strong>Humanas</strong></th>
+                <td>História</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+                <td class = "num">0.0</td>
+            </tr>
+            <tr class = "media">
+                <td colspan="4">
+                    Média de Humanas
+                </td>
+                <td class = "num">
+                    0.0
+                </td>
+        </tbody>
+    </table>
 </body>
 </html>
