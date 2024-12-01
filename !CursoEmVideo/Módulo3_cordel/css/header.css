@@ -13,8 +13,8 @@ header{
 }
 header > h1{
     padding-top: 40px;
-    font-family: "Passion One", sans-serif;
-    font-size: 4em;
+    font-family: 'Passion One', cursive;
+    font-size: 5em;
     font-variant: small-caps;
 }
 header > p{

@@ -14,7 +14,7 @@
 }
 #estrofedois > p,#estrofecinco > p{
     background-color: rgba(0, 0, 0, 0.562);
-    width: 300px;
+    width: 400px;
     padding: 5px;
 }
 main section{
@@ -22,8 +22,9 @@ main section{
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-size: 2em;
 }
 main section p{
     font-family: "Sriracha",cursive;
-    font-size: 20px;
+
 }
