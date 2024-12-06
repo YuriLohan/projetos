@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra sua idade</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="imes">Em que mês você nasceu?</label>
+            <input type="number" name="mes" id="imes" min="1" max="12" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label><br>
+            <output id="iidade">0 anos</output><br>
+            <output id = "iimes">0 meses</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            let atual2 = new Date().getMonth()
+            var mes
+            mes = 12
+            if(imes.value > mes){
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+            iimes.innerHTML = Number(imes.value) - Number(mes)
+            }
+            else if(mes > imes.value){
+            iidade.innerHTML = [Number(atual) - Number(iano.value)] - 1
+            iimes.innerHTML = [Number(imes.value) - Number(mes)] * -1
+            }
+        }
+    </script>
+</html>
