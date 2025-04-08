@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - AutoPrime</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-gray-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">AutoPrime</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="cart.html" class="hover:text-yellow-300 flex items-center">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        <span id="cart-count">0</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Your Shopping Cart</h2>
+        
+        <div id="cart-items" class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <!-- Cart items will be dynamically inserted here -->
+            <div id="empty-cart-message" class="text-center py-8">
+                <i class="fas fa-shopping-cart text-5xl text-gray-300 mb-4"></i>
+                <p class="text-xl text-gray-500">Your cart is empty</p>
+                <a href="index.html" class="text-blue-600 hover:underline mt-4 inline-block">Browse our collection</a>
+            </div>
+        </div>
+
+        <div id="cart-summary" class="bg-white rounded-lg shadow-md p-6 hidden">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-semibold">Total</h3>
+                <span id="total-price" class="text-2xl font-bold">$0</span>
+            </div>
+            <button id="checkout-btn" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition font-medium">
+                Proceed to Checkout
+            </button>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 AutoPrime. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

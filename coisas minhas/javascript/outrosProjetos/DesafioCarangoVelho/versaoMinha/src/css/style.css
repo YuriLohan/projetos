@@ -1,0 +1,107 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+header h1{
+    margin: 10px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+}
+header ul li img{
+    width: 30px;
+    height: 30px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    padding: 10px;
+    display: flex;
+}
+#inicio {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+}
+#inicio h1{
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 2.5rem;
+}
+#inicio h2{
+    padding: 15px;
+}
+main{
+    background-color: #F0F0F0;
+    height: 100%;
+}
+#containerProdutos{
+    width: 95%;
+    margin:auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #C0C0C0;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 10px;
+}
+.produtos img{
+    width: 200px;
+    height: 120px;
+}
+.produtos p{
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.produtos button, #pagamento button{
+    padding: 7px;
+    background-color:#FF5733;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 2px  rgba(32, 32, 32, 0.541);
+}
+.produtos button:hover, #pagamento button:hover{
+    background-color: rgba(248, 14, 14, 0.938);
+    transition: 0.3s;
+    font-weight: bold;
+}
+#pagamento{
+    border: 1px solid #C0C0C0;
+    padding: 15px;
+}
+#pagamentoDinamico p{
+    padding: 3px;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,75 @@
+/* Custom styles */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(10px); }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.3s ease-out forwards;
+}
+
+.animate-fade-out {
+    animation: fade-out 0.3s ease-out forwards;
+}
+
+/* Custom font */
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-1px);
+    transition: transform 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cart item animations */
+.cart-item-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.cart-item-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-in;
+}
+.cart-item-exit {
+    opacity: 1;
+}
+.cart-item-exit-active {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 300ms ease-in;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

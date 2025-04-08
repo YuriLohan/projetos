@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPrime - Luxury Cars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-gray-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">AutoPrime</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="cart.html" class="hover:text-yellow-300 flex items-center">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        <span id="cart-count">0</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Our Premium Collection</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Car 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="BMW 5 Series" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">BMW 5 Series</h3>
+                    <p class="text-gray-600 mb-4">Luxury sedan with premium features</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$58,000</span>
+                        <button onclick="addToCart('BMW 5 Series', 58000, 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg')" 
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="Audi R8" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Audi R8</h3>
+                    <p class="text-gray-600 mb-4">High-performance sports car</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$142,000</span>
+                        <button onclick="addToCart('Audi R8', 142000, 'https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg')" 
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="Porsche 911" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Porsche 911</h3>
+                    <p class="text-gray-600 mb-4">Iconic sports car</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$113,000</span>
+                        <button onclick="addToCart('Porsche 911', 113000, 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg')" 
+                                class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 AutoPrime. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
