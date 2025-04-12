@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function realizarPagamento() {
     alert(`Obrigado por sua compra, você comprou ${carrosAte2000} carros anteriores aos anos 2001 e o total da sua compra é de R$${precoTotal.toLocaleString('pt-BR')}`);
-}
-const limpar = document.getElementById('limparPagamento');
+    limparCarrinho()
 
-limpar.addEventListener('click', () => {
-    pagamentoDinamico.innerHTML = "";
+}
+function limparCarrinho(){
+    pagamentoDinamico.innerHTML = "<p>Seu carrinho está vazio.</p>";
     precoTotal = 0;
     carrosAte2000 = 0;
 
     localStorage.removeItem('carrinho');
-});
+} 

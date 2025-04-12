@@ -20,24 +20,85 @@
     </header>
     <main>
         <section id="inicio">
-            <h1>Carango Velho</h1>
-            <h2>Queima de Estoque</h2>    
+            <h1>Bem-Vindo ao Carango Velho</h1>
+            <h2>Veja nossos produtos</h2>
+            <ul>
+                <li><a href="#classicos">Clássicos</a></li>
+                <li><a href="#populares">Populares</a></li>
+                <li><a href="#luxo">Luxo</a></li>
+            </ul>    
+        </section>
+        <section id = "sobre">
+            <h1>Sobre Nós</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi ex atque animi alias. Magni, totam. Harum deserunt, minima tempora quo deleniti sint rerum aperiam sunt facilis, laboriosam quaerat ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia debitis, repudiandae in ea vero officia cumque veritatis. Labore corporis tenetur ut sequi in, aperiam aliquid! Eos quae reiciendis facilis aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, harum nihil odit vitae officiis, impedit nam eligendi saepe iste quibusdam unde voluptatibus voluptate doloribus vel dolorem cum. Perspiciatis, nihil voluptates.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi soluta, obcaecati assumenda libero esse hic, ad corporis voluptate accusantium consequuntur minima vero tenetur nemo magni at ex asperiores. Vel, pariatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur rem magni amet eveniet dolorum ea ratione et tempore deleniti illo sint, quo eaque officia ab laboriosam vitae at provident porro?
+            </p>
         </section>
         <section id="containerProdutos">
-            <div class="produtos">
-                <img src="src/images/Opala1995.png" alt="Opala 1995">
-                <p>Opala Ano 1995</p>
-                <button onclick="adicionarAoCarrinho('Opala', 1995, 12000)">Adicionar produto ao carrinho</button>
+
+            <div id = "classicos" class = "listaProdutos">
+                <h1>Carros Clássicos</h1>
+                <div class = prods>
+                    <div class="produtos">
+                        <img src="src/images/Opala1995.png" alt="Opala 1995">
+                        <p>Opala Ano 1995</p>
+                        <button onclick="adicionarAoCarrinho('Opala', 1995, 12000)">Adicionar produto ao carrinho</button>
+                    </div>
+                    <div class="produtos">
+                        <img src="src/images/fiatuno1997.png" alt="Fiat Uno 1997">
+                        <p>Fiat Uno Ano 1997</p>
+                        <button onclick="adicionarAoCarrinho('Fiat Uno', 1997, 15000)">Adicionar produto ao carrinho</button>
+                    </div>
+                    <div class="produtos">
+                        <img src="src/images/fusca1966.png" alt="Fusca 1966">
+                        <p>Fusca Ano 1966</p>
+                        <button onclick="adicionarAoCarrinho('Fusca', 1966, 59000)">Adicionar produto ao carrinho</button>
+                    </div>
+                </div>
             </div>
-            <div class="produtos">
-                <img src="src/images/fiatuno1997.png" alt="Fiat Uno 1997">
-                <p>Fiat Uno Ano 1997</p>
-                <button onclick="adicionarAoCarrinho('Fiat Uno', 1997, 15000)">Adicionar produto ao carrinho</button>
+            <div id = "populares" class = "listaProdutos">
+                <h1>Carros Populares</h1>
+                <div class = prods>
+                    <div class="produtos">
+                        <img src="src/images/citroen2010.png" alt="Citroën c3 2010">
+                        <p>Citroën c3 Ano 2010</p>
+                        <button onclick="adicionarAoCarrinho('Citroën c3', 2010, 25000)">Adicionar produto ao carrinho</button>
+                    </div>
+                    <div class="produtos">
+                        <img src="src/images/chevrolet2015.png" alt="Chevrolet Onix 2015">
+                        <p>Chevrolet Onix Ano 2015</p>
+                        <button onclick="adicionarAoCarrinho('Chevrolet Onix', 2015, 33900)">Adicionar produto ao carrinho</button>
+                    </div>
+                    <div class="produtos">
+                        <img src="src/images/gol2018.png" alt="Volkswagem Gol 2018 ">
+                        <p>Volkswagem Gol Ano 2018</p>
+                        <button onclick="adicionarAoCarrinho('Volkswagem', 2018, 45000)">Adicionar produto ao carrinho</button>
+                    </div>
+                </div>
             </div>
-            <div class="produtos">
-                <img src="src/images/ferrarri2020.png" alt="Ferrari 2020">
-                <p>Ferrari Ano 2020</p>
-                <button onclick="adicionarAoCarrinho('Ferrari', 2020, 1200000)">Adicionar produto ao carrinho</button>
+
+            <div id = "luxo" class = "listaProdutos">
+                <h1>Carros de Luxo</h1>
+                <div class = prods>
+                    <div class="produtos">
+                        <img src="src/images/ferrarri2020.png" alt="Ferrari 2020">
+                        <p>Ferrari Ano 2020</p>
+                        <button onclick="adicionarAoCarrinho('Ferrari', 2020, 1200000)">Adicionar produto ao carrinho</button>
+                    </div>
+                    <div class="produtos">
+                        <img src="src/images/porsche2024.png" alt="Porsche 911 2024">
+                        <p>Porsche 911 Ano 2024</p>
+                        <button onclick="adicionarAoCarrinho('Porsche 911', 2024, 1900000)">Adicionar produto ao carrinho</button>
+                    </div>
+                    <div class="produtos">
+                        <img src="src/images/bmwi72024.png" alt="BMW i7 2024">
+                        <p>BMW i7 Ano 2024</p>
+                        <button onclick="adicionarAoCarrinho('BMW i7', 2024, 1300000)">Adicionar produto ao carrinho</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

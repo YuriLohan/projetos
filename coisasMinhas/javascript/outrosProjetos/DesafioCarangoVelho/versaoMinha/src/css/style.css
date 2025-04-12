@@ -44,6 +44,7 @@ header ul li a{
     background-color: #003366;
     color: #fff;
     text-align: center;
+    padding-top: 20px;
 }
 #inicio h1{
     padding: 10px;
@@ -53,18 +54,71 @@ header ul li a{
 #inicio h2{
     padding: 15px;
 }
+#inicio ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding: 0;
+}
+#inicio ul li a{
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+}
+#inicio ul li a:hover{
+    box-shadow: 1px 1px 1px 1px #5ea3e7;
+    font-weight: bold;
+}
 main{
     background-color: #F0F0F0;
     height: 100%;
 }
-#containerProdutos{
-    width: 95%;
-    margin:auto;
-    padding: 10px;
+#sobre{
+    background-color: #5ea3e7;
+    padding: 30px;
+}
+#sobre h1{
+    text-align: center;
+    color: #fff;
+    font-size: 2.25rem;
+}
+#sobre p{
+    color: rgb(2, 2, 2);
+    margin: 10px;
+}
+#containerProdutos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 40px;
     align-items: center;
+    flex-wrap: wrap;
+}
+.listaProdutos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.listaProdutos h1{
+    margin: 10px;
+    font-size: 2rem;
+}
+.prods{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .produtos{
     display: flex;
@@ -79,6 +133,9 @@ main{
 .produtos img{
     width: 200px;
     height: 120px;
+}
+.produtos img:hover{
+    transform: scale(1.2);
 }
 .produtos p{
     margin: 5px;
