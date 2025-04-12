@@ -7,4 +7,4 @@
 <br>
 <a href = "https://yurilohan.github.io/projetos/!CursoEmVideo/Módulo3_tabelas/tabelas.html" target = "_blank">Tabela com Notas</a>
 <br>
-<a href = "hppts://yurilohan.github.io/projetos/coisasMinhas/javascript/outrosProjetos/DesafioCarangoVelho/versaoMinha/index.html" target ="_blank">Concessionária Carango Velho</a>
+<a href = "https://yurilohan.github.io/projetos/coisasMinhas/javascript/outrosProjetos/DesafioCarangoVelho/versaoMinha/index.html" target ="_blank">Concessionária Carango Velho</a>
